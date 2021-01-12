@@ -1,0 +1,103 @@
+.section.shrink {
+    background-color: #3c3c3c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #ffffff;
+    position: relative;
+}
+
+.section.shrink::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url('../../assets/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.section.shrink .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section.shrink .container .shrink-header {
+    margin-bottom: 64px;
+}
+
+.section.shrink .container .shrink-header h1 {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 2.9em;
+}
+
+.section.shrink .container .shrink-header p {
+    font-size: 1.2em;
+}
+
+.section.shrink .container .shrink-form {
+    width: 100%;
+    max-width: 640px;
+    margin-bottom: 10rem;
+}
+
+.section.shrink .container .shrink-form button {
+    min-width: 82px;
+}
+
+.section.shrink .container .shrink-logo {
+    position: absolute;
+    top: -128px;
+    left: 0px;
+}
+
+.section.shrink .container .shrink-logo .logo {
+    position: relative;
+    background-color: transparent;
+    height: 128px;
+    width: 128px;
+    overflow: hidden;
+}
+
+.section.shrink .container .shrink-logo .logo img {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+
+/* loading */
+.lds-dual-ring {
+    display: inline-block;
+    width: 24px;
+    height: 16px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    margin: auto;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

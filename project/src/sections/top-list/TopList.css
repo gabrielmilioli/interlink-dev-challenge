@@ -1,0 +1,33 @@
+.section.top-list {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: calc(10px + 2vmin);
+    position: relative;
+    padding: 64px 0px !important;
+}
+
+.section.top-list .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section.top-list .container .top-list-header {
+    margin-bottom: 64px;
+}
+
+.section.top-list .container .top-list-header h1 {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 2.4em;
+}
+
+.section.top-list .container .top-list-table {
+    width: 100%;
+    max-width: 640px;
+    font-size: 1em;
+}

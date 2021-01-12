@@ -1,0 +1,26 @@
+.section.footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section.footer .container .footer-made-by,
+.section.footer .container .footer-social {
+    display: inline-flex;
+    font-size: 16px;
+}
+
+.section.footer .container .footer-made-by img {
+    margin: 0px 8px;
+    height: 20px;
+}
+
+.section.footer .container .footer-social img {
+    margin: 0px 16px;
+    height: 36px;
+}
+
+.section.footer {
+    padding: 16px 0px !important;
+}
